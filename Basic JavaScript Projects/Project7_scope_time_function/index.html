@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project7 scope time function</title>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <script>
+            Show_Variables();
+        </script>
+        <br>
+        <h3>Function Get Hours</h3>
+        <p id="Hours_Text" onclick="Function_Hours()">
+            Click here
+        </p>
+        <!--******************************************-->
+        <br>
+        <h3>Function Get Time</h3>
+        <p onclick="GetTime()">
+            Click here to know the time (only if the month is November)
+        </p>
+        <p id="Time_Text"></p>
+        <!--******************************************-->
+        <br>
+        <h3>Step 151 "ELSE ASSIGNMENT"</h3>
+        <p>
+            This function calculates the hours that have passed or are missing, 
+            depending on the time entered by the user and the current time. 
+            <br>Note: Discriminate the minutes
+        </p>
+        <p>Enter a time of day (0-23)</p>
+        <input id="User_Hour" value="0">
+        <button onclick="Calculate_Missing_Hour()">Click</button>
+        <p id="Missing_Hour"></p>
+        <!--******************************************-->
+        <br>
+        <h3>Step 153 "ELSE IF ASSIGNMENT"</h3>
+        <p id="Time_Of_Day"></p>
+        <button onclick="Time_Function()">Click here to get the time.</button>
+        <!--******************************************-->
+    </body>
+</html>
