@@ -3,7 +3,7 @@
     https://www.cntraveler.com/gallery/best-bars-in-portland-oregon
 
     Bit House Saloon
-    ne of Bit House's main strengths is the sheer variety of drinks it offers. 
+    One of Bit House's main strengths is the sheer variety of drinks it offers. 
     Interested in creative cocktails? The Southeast Portland bar has you covered 
     with classics made right, thoughtful original drinks, and a list of Old 
     Fashioneds. More of a whiskey gal? Bit House's selection is comparable to 
@@ -54,31 +54,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Slideshow Challenge</title>
         <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <script src="./js/main.js"></script>
     </head>
     <body>
+        <div style="text-align:center">
+            <h1>Bars in Portland</h1>
+        </div>
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
                 <img src="./images/Bit-House-Saloon.jpg" style="width:100%">
-                <div class="text">Bit House Saloon</div>
+                <div class="text" onclick="showTextSlide(1)">Bit House Saloon</div>
             </div>
             
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
                 <img src="./images/Multnomah_Whiskey_Library.jpg" style="width:100%">
-                <div class="text">Multnomah Whiskey Library</div>
+                <div class="text" onclick="showTextSlide(2)">Multnomah Whiskey Library</div>
             </div>
             
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
                 <img src="./images/Bible_Club_Pdx.jpg" style="width:100%">
-                <div class="text">Bible Club Pdx</div>
+                <div class="text" onclick="showTextSlide(3)">Bible Club Pdx</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
                 <img src="./images/Devils_Point.jpg" style="width:100%">
-                <div class="text">Devils Point</div>
+                <div class="text" onclick="showTextSlide(4)">Devils Point</div>
             </div>
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -91,6 +95,65 @@
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        <!-- Descriptions of the slides -->
+        <div style="text-align:center" id="textslide1">
+            <p>
+                <h2>Bit House Saloon</h2>
+                One of Bit House's main strengths is the sheer variety of drinks it offers. 
+                Interested in creative cocktails? The Southeast Portland bar has you covered 
+                with classics made right, thoughtful original drinks, and a list of Old 
+                Fashioneds. More of a whiskey gal? Bit House's selection is comparable to 
+                that of a dedicated whiskey bar. Looking to sample Portland's highly praised 
+                beer scene? There are plenty of brews on tap. Perhaps a little surprisingly, 
+                the heavily-wooded, pre-Prohibition era space is also rumored to be the 
+                origin of "frosé;" even if that's not quite the case, it was certainly one 
+                of the first to mix rosé and spirits and serve the slushy mixture.
+            </p>
+        </div>
+        <div style="text-align:center" id="textslide2">
+            <p>
+                <h2>Multnomah Whiskey Library</h2>
+                At Multnomah Whiskey Library, there are cocktails, to be sure, most of 
+                which are whiskey-based. There's even beer and wine. But to order those 
+                would be a bewildering choice. MWL offers the most robust selection of 
+                whiskeys in the state, from bourbons you might see at a neighborhood dive, 
+                to rare, vintage scotches and esoteric Japanese varieties. Some come with a 
+                hefty price tag; it's to each their own to decide whether it's worth the 
+                splurge. If you need some sound advice about what to order, you're in luck: 
+                The staff here is rigorously trained in both service and knowledge.
+            </p>
+        </div>
+        <div style="text-align:center" id="textslide3">
+            <p>
+                <h2>Bible Club Pdx</h2>
+                Going to Bible Club, in sleepy Sellwood/Moreland, feels like taking a 
+                journey back in time. Every single thing in the bar, from the floor to the 
+                ceiling, the furniture to the door knobs, the bar equipment to the lighting,
+                dates back to the 1930s—at the latest. Most of it is actually from the 19th 
+                century—even the tunes predate Prohibition. It's often referred to, both by 
+                its owners and local media, as a "museum you can drink in." Another notable 
+                feature is the price of the cocktails; unusually for Portland, none cost 
+                less than $12, and many hit the $16 mark. Then again, each drink incorporates 
+                high-quality ingredients and high-end booze. If you're looking to really 
+                splash out, ask about the secret Seven Deadly Sins menu ($30 to $100), 
+                where drinks like the Robber Baron will ruin you for any other Old Fashioned.
+            </p>
+        </div>
+        <div style="text-align:center" id="textslide4">
+            <p>
+                <h2>Devils Point</h2>
+                Portland's strip club culture is uniquely progressive, and it's a deeply 
+                ingrained part of the city's bar culture as a whole. Devils Point is a 
+                perfect example of this, with its incredibly talented dancers and raucous 
+                vibes—there's nothing else like it. If you're expecting a cliché strip club 
+                crowd, you'll be surprised. Rather than sketchy-looking businessman throwing 
+                piles of dollar bills onstage, the crowd here is indistinguishable from any 
+                other neighborhood bar, with men, women, groups, and couples all rallying 
+                around to enjoy the drinks and entertainment in the progressive, upbeat 
+                atmosphere. Grab a domestic tallboy—never a fancy cocktail—and join them.
+            </p>
         </div>
         <script src="./js/main.js"></script>
     </body>
