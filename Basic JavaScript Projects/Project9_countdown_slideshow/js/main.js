@@ -40,16 +40,20 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
+    //Call the function to show the description
     showTextSlide(slideIndex);
 }
 
-////Show the description of the current slide
+//Show the description of the current slide
 //and hide the rest of them
 function showTextSlide(n) {
+    //All descriptions are hidden
     textslide1.style.display = "none";
     textslide2.style.display = "none";
     textslide3.style.display = "none";
     textslide4.style.display = "none";
+    //According to the value of the parameter n,
+    //only that description is shown
     switch (n) {
         case 1:
             textslide1.style.display = "block";

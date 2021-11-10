@@ -16,6 +16,11 @@ img {
     height:450px;
 }
 
+/* shadow for the title */
+h1 {
+    text-shadow: 0 0 16px red;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
