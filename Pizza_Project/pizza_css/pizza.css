@@ -1,0 +1,111 @@
+/* Import an external fonts */
+@font-face {
+    font-family: QuickMenuBoards;
+    src: url(../fonts/QuickMenuBoards.ttf);
+}
+
+@font-face {
+    font-family: HotPizza;
+    src: url(../fonts/HotPizza.otf);
+}
+
+@font-face {
+    font-family: PanPizza;
+    src: url(../fonts/PanPizza.ttf);
+}
+
+/* Style of body */
+body {
+    font-size: 20px;
+    background-color: rgb(235, 235, 235);
+}
+
+div {
+    font-family: PanPizza;
+    color: rgb(195, 0, 255);
+}
+
+h1 {
+    font-family: QuickMenuBoards;
+    color: blue;
+    text-shadow: 2px 2px 8px rgb(160, 206, 248);
+    text-align: center;
+}
+
+h3 {
+    font-family: HotPizza;
+    color: red;
+    text-shadow: 2px 2px 8px rgb(250, 206, 139);
+}
+
+#menuBG {
+    width: 750px;
+    height: 550px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 750px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 250px;
+    height: 300px;
+    float: left;
+}
+
+.center {
+    width: 250px;
+    height: 300px;
+    float: left;
+}
+
+.right {
+    width: 250px;
+    height: 300px;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+/* Style of id with the text of the toppings and final price */
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 700px;
+    height: 200px;
+}
+
+/* Style of button ordered */
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 130px;
+    height: 40px;
+    display: block;
+	margin: 25px auto;
+    background-image: url(../images/shopping_cart-3.png);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: -5px;
+    text-align: right;
+    color: white;
+}
+
+#btnOrder:hover {
+    background-color: rgb(0, 204, 255);
+    color: black;
+}
