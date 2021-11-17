@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Engels Molina</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+    </head>
+
+    <!-- Body -->
+    <body class="Background">
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Gallery</a>
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+
+        <!-- Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./images/video/backvideo.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Portfolio of Engels Molina</h1>
+            <strong>
+                <p class="center">
+                    <q>My favorite things in life don’t cost any money. It’s really clear that the most precious resource we all have is time....</q>
+                    <br> -Steve Jobs
+                    <br>
+                    <br>My name is Engels Molina. Welcome to my Portfolio, a place where you will know my lived experiences;
+                    <br/>a space where you will find new technological experiences.
+                    <br>
+                    <br>Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/IMG_1.jpg" alt="Contacte me">
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact" style="color: rgb(172, 222, 255); ">Contact me now!</a></div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/IMG_6.jpg" alt="I am always learning new things"> 
+                        <div class="text">I'm always learning new things....</div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="./images/coding.jpg" alt="Replace with a picture of your choosing">
+            </div>
+            <!-- Right column -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! I enjoy time with my family, traveling, dance and laugh with life.... 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- Projects section -->
+        <div class="Row" id="Projects">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>Projects</h1>
+                <p>These are some of the many projects I have developed, you can check the code on <a href="https://github.com/BlackGhost4/" target="_blank"></a>GitHub</a>.
+                    <br><br>
+                    In addition, you can visit the <a href="https://majve.mx/" target="_blank">MAJVE</a> website, where you will find different information about the technology that I have developed.
+                </p>
+            </div>
+            <!-- Right column -->
+            <div class="Column_2">
+                <a href="https://majve.mx/" target="_blank"><img src="./images/develop.png"></a>
+            </div>
+        </div>
+
+        <!-- Game section -->
+        <div class="Row" id="Game">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="./images/bored.jpg" alt="Bored">
+            </div>
+            <!-- Right column -->
+            <div class="Column_1">
+                <h1>You're bored?</h1>
+                <p style="text-align: center;">Have a few minutes of fun with the</p>
+                <div onclick="openModalGame()"><p style="text-align: center;color: blue;">Tic Tac Toe game</p></div>
+            </div>
+        </div>
+
+        <!-- Modal Game -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <embed type="text/html" src="./TicTacToe/TicTacToe.html"  width="100%" height="100%">
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div id="Contact">
+           <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+           <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                    <h1 style="color: rgb(104, 13, 13);">Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+         
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+           </div>
+        </div>
+        
+        <!-- Footer section -->
+        <footer>
+            <p class="center">&copy Engels Molina,&nbsp;<a href="https://majve.mx/" target="_blank">MAJVE</a>&nbsp;|&nbsp;Tecnolog&iacute;a, la armon&iacute;a de tu vida</p>
+            <br>
+        </footer>
+        <script src="JS/portfolio.js"></script>
+    </body>
+</html>
